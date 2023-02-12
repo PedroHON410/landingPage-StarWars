@@ -33,13 +33,16 @@ html{
     background-image: url(../imagens/images-mobile/home-mobile.png);
     position: relative;
     background-size: cover;
+    background-repeat: no-repeat;
 }
-
+.hero__container{
+    
+}
 .hero__container__nav-bar{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 1.7rem 2.6rem 0rem 2.6rem;
+    padding: 2.2rem 3rem 0rem 3rem;
     
 }
 .hero__nav__logo img{
