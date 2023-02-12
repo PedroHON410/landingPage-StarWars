@@ -52,6 +52,13 @@
             width: 16rem;
         }
 
+        .hero__container__bar{
+            display: block;
+            height: 0.1rem;
+            background-color: #fff;
+            margin: 0.5rem 2.6rem;
+        }
+
 
        
     }
@@ -100,14 +107,19 @@
         .hero__stream__btn{
             width: 16rem;
         }
+        .hero__container__bar{
+            display: block;
+            height: 0.1rem;
+            background-color: #fff;
+            margin: 0.5rem 2.6rem;
+        }
     }
 
 
     @media screen and (min-width: 1025px) {
         
         .hero{
-            background-image: url(../imagens/images-desktop/home-desktop.svg);
-            background-position: right;
+            background: url(../imagens/images-desktop/home-desktop.svg);
         }
         .hero__nav__icon-menu{
             display: none;
@@ -147,5 +159,10 @@
         .hero__stream__btn{
             width: 16rem;
         }
-        
+        .hero__container__bar{
+            display: block;
+            height: 0.1rem;
+            background-color: #fff;
+            margin: 0.5rem 2.6rem;
+        }
     }
