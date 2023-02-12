@@ -49,32 +49,24 @@ html{
     width: 8rem;
 }
 .hero__container__bar{
-    height: 0.1rem;
-    background-color: #fff;
-    margin: 0.5rem 2.6rem;
+    display: none;
 }
 
 .hero__box{
     
-    background: rgb(14 18 38 / 92%);
+    background: rgb(14, 18, 38);
     height: 100vh;
     width: 0;
     position: absolute;
     top: 0;
     transition: all 0.4s ease;
     overflow: hidden;
+    z-index: 1;
 }
 
 
-/* .hero__box__icon-close{
-    color: #fff;
-    right: 0;
-    position: absolute;
-    right: 3rem;
-    top: 2.8rem;
-} */
 .hero__nav{
-   margin-top: 13.5rem;
+   margin-top: 8rem;
    margin-left: 3.5rem;
 }
 
@@ -99,6 +91,7 @@ html{
 .hero__box .hero__stream{
     margin-left: 3.8rem;
     margin-top: 4.5rem;
+    gap: 1.5rem;
 }
 .hero__stream{
     display: flex;
@@ -125,35 +118,30 @@ html{
 
 .hero__container__order{
     margin-left: 3.1rem;
-    margin-top: 7rem;
-    max-width: 20rem;
-    width: 100%;  
+    margin-top: 12rem;
+    
 }
-.order__logo{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-.order__logo img{
-    width: 20rem;
+.order__text span{
+    margin-top: 4rem;
+    position: relative;
     display: block;
-    margin-bottom: 1.2rem;
+    max-width: 12rem;
+    cursor: pointer;
+    padding-bottom: 1rem;
 }
-.order__images{
-    display: flex;
-    align-items: center;
-    margin-top: 2.5rem;
-    justify-content: space-around;
-}
-.order__choice{
-    text-align: center;
-}
-.order__choice img{
-    width: 6.5rem;
-    height: 6.5rem;
-    display: block;
+.order__text span::after{
+    content: '';
+    width: 100%;
+    height: 0.2rem;
+    background-color: #ffffffab;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: 0.4s ease-in-out;
    
 }
-.order__choice span{
-    font-size: 1.4rem;
+
+.order__text span:hover::after{
+    width: 0;
 }
+
