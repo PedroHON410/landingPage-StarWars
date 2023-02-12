@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500&family=Open+Sans:wght@500&display=swap');
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --colorButton:#0D1D6D;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+.font__btn{
+    font-size: 1.6rem;
+    font-family: 'Open Sans', sans-serif;
+    color: #fff;
+    font-weight: 500;
+}
+.font__text{
+    font-size: 2rem;
+    font-family: 'Montserrat', sans-serif;
+    color: #fff;
+    font-weight: 300;
+}
+
+.hero{
+    height: 100vh;
+    background-image: url(../imagens/images-mobile/home-mobile.png);
+    position: relative;
+    background-size: cover;
+}
+
+.hero__container__nav-bar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.7rem 2.6rem 0rem 2.6rem;
+    
+}
+.hero__nav__logo img{
+    width: 8rem;
+}
+.hero__container__bar{
+    height: 0.1rem;
+    background-color: #fff;
+    margin: 0.5rem 2.6rem;
+}
+
+.hero__box{
+    
+    background: rgb(14 18 38 / 92%);
+    height: 100vh;
+    width: 0;
+    position: absolute;
+    top: 0;
+    transition: all 0.4s ease;
+    overflow: hidden;
+}
+
+
+/* .hero__box__icon-close{
+    color: #fff;
+    right: 0;
+    position: absolute;
+    right: 3rem;
+    top: 2.8rem;
+} */
+.hero__nav{
+   margin-top: 13.5rem;
+   margin-left: 3.5rem;
+}
+
+
+.hero__nav__icon-menu{
+    color: #fff;
+}
+
+.hero__nav__nav-list{
+    list-style: none;
+    
+}
+.hero__nav__nav-list li{
+    margin-top: 3.8rem;
+   
+}
+.hero__nav__nav-list li a{
+    text-decoration: none;
+    font-size: 1.6rem;
+    
+}
+.hero__box .hero__stream{
+    margin-left: 3.8rem;
+    margin-top: 4.5rem;
+}
+.hero__stream{
+    display: flex;
+    align-items: center;
+   
+}
+.hero__stream img{
+    width: 8rem;
+}
+.hero__stream__btn{
+    max-width: 10rem;
+    width: 100%;
+    height: 3.2rem;
+    font-size: 1.2rem;
+    background-color: var(--colorButton);
+    border: none;
+    border-radius: 0.5rem;
+    color: #fff;
+}
+
+.hero__box.active{
+    width: 70%;
+}
+
+.hero__container__order{
+    margin-left: 3.1rem;
+    margin-top: 7rem;
+    max-width: 20rem;
+    width: 100%;  
+}
+.order__logo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.order__logo img{
+    width: 20rem;
+    display: block;
+    margin-bottom: 1.2rem;
+}
+.order__images{
+    display: flex;
+    align-items: center;
+    margin-top: 2.5rem;
+    justify-content: space-around;
+}
+.order__choice{
+    text-align: center;
+}
+.order__choice img{
+    width: 6.5rem;
+    height: 6.5rem;
+    display: block;
+   
+}
+.order__choice span{
+    font-size: 1.4rem;
+}
