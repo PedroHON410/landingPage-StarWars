@@ -4,9 +4,62 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos/mobile-first.css">
+    <link rel="stylesheet" href="estilos/media-query.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,600,0,0" />
     <title>Star Wars</title>
 </head>
 <body>
-    
+
+    <header class="hero">
+        
+        
+        <div class="hero__container">
+            <div class="hero__container__nav-bar">
+                <h1 class="hero__nav__logo"><img src="imagens/images-logo/logo-star-wars.svg" alt="logo Star logo-star-wars"></h1>
+                <div id="hero__icon-menu" class="hero__nav__icon-menu"><span class="material-symbols-outlined">menu</span></div>
+            </div>
+            
+            <div class="hero__box">
+                
+                <nav class="hero__nav">
+                    <ul class="hero__nav__nav-list">
+                        <li><a class="font__text" href="#">FILMES</a></li>
+                        <li><a class="font__text" href="">SÉRIES</a></li>
+                        <li><a class="font__text" href="">PERSONAGENS</a></li>
+                    </ul>
+                </nav>
+            
+                <div class="hero__stream">
+                    <button class="hero__stream__btn font__btn">STREAM NOW</button>
+                    <img src="imagens/images-logo/logo-disney-blue.svg" alt="logo disney plus">
+                </div>
+            </div>
+        </div>
+        
+        <div class="hero__container__bar"></div>
+        
+        <div class="hero__container__order">
+            <div class="order__logo">
+                <img src="imagens/images-logo/logo-star-wars-white.svg" alt="logo Star Wars branco">
+                <span class="font__text">Escolha sua ordem</span>
+            </div>
+            <div class="order__images">
+                <div class="order__choice order__jedi font__text">
+                    <img src="imagens/images-logo/logo-jedi.svg" alt="logo Jedi">
+                    <span>JEDI</span>
+                </div>
+                <div class="order__choice order__sith font__text">
+                    <img src="imagens/images-logo/logo-sith.svg" alt="logo SITH">
+                    <span>SITH</span>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- <div class="header__line"></div> -->
+    </header>
+
+    <script src="javaScript/script.js"></script>
 </body>
 </html>
