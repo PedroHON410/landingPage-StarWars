@@ -82,18 +82,27 @@
             display: block;
         }
 
+        .mandaloriano__image{
+            /* background-image: url(../imagens/images-desktop/mandaloriano-desktop.svg);
+            height: 35rem;
+            width: 100%;
+            background-position: top; */
+        }
         .serie__image{
-            position: relative;
-            
+            flex-direction: row;
+            justify-content: space-around;
+        }
+        .serie__image picture img{
+            width: 45rem;
         }
         .serie__description{
-            position: absolute;
+            /* position: absolute;
             top: 7rem;
-            left: 1.5rem;
+            left: 1.5rem; */
         }
 
         .description__text{
-            text-align: left;
+            
         }
         .description__text img{
             width: 12rem;
@@ -166,14 +175,24 @@
             display: block;
         }
 
-        .serie__image{
-            position: relative;
-            
+        /* .mandaloriano__image{
+            background-image: url(../imagens/images-desktop/mandaloriano-desktop.svg);
+            height: 65rem;
+            width: 100%;
+            background-position: top;
         }
         .serie__description{
             position: absolute;
             top: 7rem;
             left: 1.5rem;
+        } */
+
+        .serie__image{
+            flex-direction: row;
+            justify-content: space-around;
+        }
+        .serie__image picture img{
+            width: 45rem;
         }
         .serie__description{
             max-width: 30rem;
@@ -198,6 +217,7 @@
         .hero{
             background: url(../imagens/images-desktop/home-desktop.svg);
             height: 100vh;
+            background-repeat: no-repeat;
         }
         .hero__nav__icon-menu{
             display: none;
@@ -268,23 +288,35 @@
         .catalogo__logos :first-child{
             display: block;
         }
+        .serie__image{
+          
+           justify-content: space-around;
+           flex-direction: row;
+
+        }
+        /* .mandaloriano__image{
+            background-image: url(../imagens/images-desktop/mandaloriano-desktop.svg);
+            height: 40rem;
+            width: 72rem;
+            background-position: top;
+        } */
+        
 
         .serie__image{
-            position: relative;
-            border: 3px solid greenyellow;
+            flex-direction: row;
+            justify-content: space-around;
+        }
+        .serie__image picture img{
+            width: 72rem;
         }
         .serie__description{
-            position: absolute;
-            max-width: 38rem;
-            top: 10rem;
-            left: 5rem;
-            border: 2px solid red;
+            max-width: 35rem;
         }
        
 
 
         .description__text{
-            text-align: left;
+            
         }
         .description__text img{
             width: 23.5rem;
