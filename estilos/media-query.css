@@ -11,6 +11,9 @@
     @media screen and (min-width: 768px) and (max-width: 992px) {
         .hero{
             background-image: url(../imagens/images-mobile/image-tablet.jpg);
+            
+            height: 80rem;
+            
         }
         
         .hero__nav__icon-menu{
@@ -48,18 +51,57 @@
             margin: 0rem 0rem 0rem 0rem;
             gap: 2rem;
         }
-        .hero__stream__btn{
+        .btn__stream{
             width: 16rem;
         }
+        .btn__stream__link{
+            font-size: 1.4rem;
+        }
 
-        .hero__container__bar{
+        .hero .hero__container__bar{
             display: block;
-            height: 0.1rem;
-            background-color: #fff;
+            /* height: 0.1rem;
+            background-color: #fff; */
             margin: 0.5rem 2.6rem;
         }
 
+        .hero__container__order{
+           
+            margin-top: 9rem;
+            
+        }
 
+        /* -------------------- */
+
+
+        .catalogo__logos{
+            display: flex;
+            gap: 2rem;
+        }
+        .catalogo__logos :first-child{
+            display: block;
+        }
+
+        .serie__image{
+            position: relative;
+            
+        }
+        .serie__description{
+            position: absolute;
+            top: 7rem;
+            left: 1.5rem;
+        }
+
+        .description__text{
+            text-align: left;
+        }
+        .description__text img{
+            width: 12rem;
+        }
+
+        .serie__button{
+            justify-content: space-between;
+        }
        
     }
 
@@ -68,6 +110,7 @@
         
         .hero{
             background-image: url(../imagens/images-desktop/home-desktop.svg);
+            height: 100vh;
         }
         .hero__nav__icon-menu{
             display: none;
@@ -104,14 +147,48 @@
             margin: 0rem 0rem 0rem 0rem;
             gap: 2rem;
         }
-        .hero__stream__btn{
+        .btn__stream{
             width: 16rem;
         }
-        .hero__container__bar{
+        .hero .hero__container__bar{
             display: block;
-            height: 0.1rem;
-            background-color: #fff;
+            /* height: 0.1rem;
+            background-color: #fff; */
             margin: 0.5rem 2.6rem;
+        }
+
+        /* ---------------- */
+        .catalogo__logos{
+            display: flex;
+            gap: 2rem;
+        }
+        .catalogo__logos :first-child{
+            display: block;
+        }
+
+        .serie__image{
+            position: relative;
+            
+        }
+        .serie__description{
+            position: absolute;
+            top: 7rem;
+            left: 1.5rem;
+        }
+        .serie__description{
+            max-width: 30rem;
+        }
+
+
+        .description__text{
+            text-align: left;
+        }
+        .description__text img{
+            width: 23.5rem;
+        }
+        
+        .serie__button{
+            justify-content: space-between;
         }
     }
 
@@ -120,6 +197,7 @@
         
         .hero{
             background: url(../imagens/images-desktop/home-desktop.svg);
+            height: 100vh;
         }
         .hero__nav__icon-menu{
             display: none;
@@ -143,6 +221,10 @@
         .hero__container__nav-bar{
             padding: 0rem;   
         }
+        .hero__nav__logo img{
+            width: 10rem;
+        }
+        
 
         .hero__nav{
             margin: 0;
@@ -156,13 +238,59 @@
             margin: 0rem 0rem 0rem 0rem;
             gap: 2rem;
         }
-        .hero__stream__btn{
-            width: 16rem;
+        .serie__button .btn__stream{
+            max-width: 16rem;
+            height: 5rem;
         }
-        .hero__container__bar{
+        .btn__stream{
+            max-width: 16rem;
+            height: 5rem;
+            padding-left: 3rem;
+            padding-right: 3rem;
+        }
+        .hero__stream img{
+            width: 10rem;
+        }
+        
+        .hero .hero__container__bar{
             display: block;
-            height: 0.1rem;
-            background-color: #fff;
+            /* height: 0.1rem;
+            background-color: #fff; */
             margin: 0.5rem 2.6rem;
+        }
+
+
+        /* ---------------- */
+        .catalogo__logos{
+            display: flex;
+            gap: 2rem;
+        }
+        .catalogo__logos :first-child{
+            display: block;
+        }
+
+        .serie__image{
+            position: relative;
+            border: 3px solid greenyellow;
+        }
+        .serie__description{
+            position: absolute;
+            max-width: 38rem;
+            top: 10rem;
+            left: 5rem;
+            border: 2px solid red;
+        }
+       
+
+
+        .description__text{
+            text-align: left;
+        }
+        .description__text img{
+            width: 23.5rem;
+        }
+        
+        .serie__button{
+            justify-content: space-between;
         }
     }
