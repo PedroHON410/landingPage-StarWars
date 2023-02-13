@@ -17,13 +17,30 @@ html{
 }
 body{
     background-color: var(--body-background);
+    height: 100vh;
+    
 }
-.font__btn{
-    font-size: 1.6rem;
+
+
+.btn__stream{
+    max-width: 12rem;
+    width: 100%;
+    height: 3.5rem;
+    background-color: var(--colorButton);
+    border: none;
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+}
+
+.btn__stream__link{
+    font-size: 1.2rem;
     font-family: 'Open Sans', sans-serif;
     color: #fff;
     font-weight: 500;
+    text-decoration: none;
 }
+
+
 .font__text{
     font-size: 2rem;
     font-family: 'Montserrat', sans-serif;
@@ -32,7 +49,7 @@ body{
 }
 
 .hero{
-    height: 100vh;
+    height: 64rem;
     background-image: url(../imagens/images-mobile/home-mobile.png);
     position: relative;
     background-size: cover;
@@ -51,8 +68,14 @@ body{
 .hero__nav__logo img{
     width: 8rem;
 }
-.hero__container__bar{
+.hero .hero__container__bar{
     display: none;
+}
+.hero__container__bar{
+    
+    height: 0.1rem;
+    background-color: #fff;
+    
 }
 
 .hero__box{
@@ -104,7 +127,7 @@ body{
 .hero__stream img{
     width: 8rem;
 }
-.hero__stream__btn{
+/* .hero__stream__btn{
     max-width: 10rem;
     width: 100%;
     height: 3.2rem;
@@ -113,7 +136,7 @@ body{
     border: none;
     border-radius: 0.5rem;
     color: #fff;
-}
+} */
 
 .hero__box.active{
     width: 70%;
@@ -171,4 +194,51 @@ main{
 .font__text__catalogo{
     font-size: 1.8rem;
     margin-top: 2rem;
+}
+
+.serie__image{
+    margin-top: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.mandaloriano__image{}
+.serie__image picture img{
+    width: 100%;
+}
+
+.serie__description{
+    max-width: 25rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.description__text{
+    text-align: center;
+}
+.description__text img{
+    width: 12rem;
+}
+.description__text p{
+    font-size: 1.4rem;
+}
+
+.serie__button{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 2rem;
+}
+.serie__button .btn__stream{
+    max-width: 10rem;
+}
+.serie__button .btn__stream__link{
+    font-size: 1.2rem;
+}
+
+.btn__trailer{
+    background-color: transparent;
+    border: 2px solid #fff;
 }
