@@ -9,12 +9,15 @@
 }
 :root{
     --colorButton:#0D1D6D;
+    --body-background:#080A1B;
 }
 
 html{
     font-size: 62.5%;
 }
-
+body{
+    background-color: var(--body-background);
+}
 .font__btn{
     font-size: 1.6rem;
     font-family: 'Open Sans', sans-serif;
@@ -145,3 +148,27 @@ html{
     width: 0;
 }
 
+
+/* --------------------- */
+
+
+
+main{
+    margin-top: 6.6rem;
+    padding: 0rem 2rem;
+}
+.catalogo{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.catalogo__logos img{
+    width: 10rem;
+}
+.catalogo__logos :first-child{
+    display: none;
+}
+.font__text__catalogo{
+    font-size: 1.8rem;
+    margin-top: 2rem;
+}
