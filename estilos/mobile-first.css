@@ -180,7 +180,7 @@ body{
 
 /* main */
 main{
-    margin-top: 6.6rem;
+   
     padding: 0rem 2rem;
     
 }
@@ -188,6 +188,7 @@ main{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin-top: 6.6rem;
 }
 .catalogo__logos img{
     width: 10rem;
@@ -281,3 +282,27 @@ main{
     background-color: #fff;
 }
 /* -------------------- */
+
+/* catalogo de filmes */
+
+.catalogo__filmes{
+    margin-top: 3rem;
+}
+.filmes{
+    display: flex;
+    overflow: auto;
+    gap: 1.5rem;
+}
+.filmes::-webkit-scrollbar{
+    background-color: transparent;
+    height: 1rem;
+   
+}
+.filmes::-webkit-scrollbar-thumb{
+    background-color: #fff;
+    width: 1rem;
+    border-radius: 30rem;
+}
+.capa{
+    width: 30rem;
+}
