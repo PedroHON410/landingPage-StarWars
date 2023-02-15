@@ -29,10 +29,12 @@
             justify-content: space-between;
             flex: auto;
         }
+        
         .hero__container{
             display: flex;
             align-items: center;
             padding: 2.2rem 3rem 0rem 3rem;
+    
         }
         
         .hero__container__nav-bar{
@@ -131,7 +133,13 @@
             width: auto;
             flex-direction: row;
            
-          }
+        }
+
+        /* peronagens */
+
+        .personagens__container{ 
+            grid-template-columns: 1fr 1fr;
+        }
        
     }
 
@@ -385,5 +393,28 @@
            
           }
   
-          
+          /* personagens */
+        .personagens__container{ 
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+
+
+        .personagens__box{
+            
+            height: 30rem;
+            max-width: 32rem;
+            flex-direction: column;
+            
+        }
+
+        .personagens__image{
+            height: 20rem;
+            width: 21rem;
+     
+        }
+
+        .personagens__box span{
+            font-size: 2rem;
+            margin-top: 3rem;
+          }
     }
