@@ -326,7 +326,6 @@ main{
   .carousel .carousel__actions button {
     border-radius: 5rem;
     border: 0;
-    font-weight: bold;
     cursor: pointer;
     width: 4rem;
     height: 4rem;
