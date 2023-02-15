@@ -119,6 +119,19 @@
         .serie__button{
             justify-content: space-between;
         }
+
+        /* CATALOGO DE FILMES */
+        .catalogo__filmes{
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+        }
+
+        .catalogo__button{
+            width: auto;
+            flex-direction: row;
+           
+          }
        
     }
 
@@ -280,16 +293,18 @@
         .hero__box .hero__stream{
             margin: 0rem 0rem 0rem 0rem;
             gap: 2rem;
+            flex: auto;
+            justify-content: flex-end;
         }
         .serie__button .btn__stream{
             max-width: 16rem;
             height: 5rem;
         }
         .btn__stream{
-            max-width: 16rem;
+            max-width: 18rem;
             height: 5rem;
-            padding-left: 3rem;
-            padding-right: 3rem;
+            
+            
         }
         .hero__stream img{
             width: 10rem;
@@ -350,4 +365,25 @@
         .serie__button{
             justify-content: space-between;
         }
+
+
+         /* CATALOGO DE FILMES */
+         .catalogo__filmes{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-around;
+          }
+
+          .catalogo__button{
+
+            width: 100%;
+            
+          }
+          .catalogo__button .btn__stream{
+            max-width: auto;
+           
+          }
+  
+          
     }
