@@ -4,14 +4,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
     <link rel="stylesheet" href="estilos/mobile-first.css">
     <link rel="stylesheet" href="estilos/media-query.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,600,0,0" />
+    <script src="https://unpkg.com/scrollreveal"></script>
+    
     <title>Star Wars</title>
 </head>
 <body>
 
-    <header class="hero">
+    <header id="home" class="hero">
         
         
         <div class="hero__container">
@@ -24,9 +27,9 @@
                 
                 <nav class="hero__nav">
                     <ul class="hero__nav__nav-list">
-                        <li><a class="font__text" href="#">FILMES</a></li>
-                        <li><a class="font__text" href="">SÉRIES</a></li>
-                        <li><a class="font__text" href="">PERSONAGENS</a></li>
+                        <li><a class="font__text" href="#series">SÉRIES</a></li>
+                        <li><a class="font__text" href="#filmes">FILMES</a></li>
+                        <li><a class="font__text" href="#personagens">PERSONAGENS</a></li>
                     </ul>
                 </nav>
             
@@ -52,10 +55,10 @@
 
 
     <main>
-        <div class="catalogo">
+        <div id="series" class="catalogo">
             <div class="catalogo__logos">
-                <img src="imagens/images-logo/logo-star-wars.svg" alt="logo Star Wars">
-                <img src="imagens/images-logo/logo-disney-white.svg" alt="logo disney Whithe">
+                <a href="#home"><img src="imagens/images-logo/logo-star-wars.svg" alt="logo Star Wars"></a>
+                <a href="#home"><img src="imagens/images-logo/logo-disney-white.svg" alt="logo disney Whithe"></a>
             </div>
             <p class="font__text font__text__catalogo">Catálogo de Séries</p>
         </div>
@@ -63,7 +66,7 @@
         <div class="hero__container__bar"></div>
 
         <div class="catalogo__series">
-            <section class="catalogo__mandaloriano serie__image">
+            <section  class="catalogo__mandaloriano serie__image">
                 <picture>
                     <source media="(min-width: 768px)" srcset="imagens/images-desktop/mandaloriano-desktop.png">
                     <img src="imagens/images-mobile/mandaloriano-mobile.png" alt="wallpaper madaloriano">
@@ -162,10 +165,10 @@
             </section>
         </div>
 
-        <div class="catalogo">
+        <div id="filmes" class="catalogo">
             <div class="catalogo__logos">
-                <img src="imagens/images-logo/logo-star-wars.svg" alt="logo Star Wars">
-                <img src="imagens/images-logo/logo-disney-white.svg" alt="logo disney Whithe">
+                <a href="#home"><img src="imagens/images-logo/logo-star-wars.svg" alt="logo Star Wars"></a>
+                <a href="#home"><img src="imagens/images-logo/logo-disney-white.svg" alt="logo disney Whithe"></a>
             </div>
             <p class="font__text font__text__catalogo">Catálogo de Filmes</p>
         </div>
@@ -227,12 +230,12 @@
             </div>
         </section>
 
-        <div class="catalogo">
+        <div id="personagens" class="catalogo">
             <div class="catalogo__logos">
-                <img src="imagens/images-logo/logo-star-wars.svg" alt="logo Star Wars">
-                <img src="imagens/images-logo/logo-disney-white.svg" alt="logo disney Whithe">
+                <a href="#home"><img src="imagens/images-logo/logo-star-wars.svg" alt="logo Star Wars"></a>
+                <a href="#home"><img src="imagens/images-logo/logo-disney-white.svg" alt="logo disney Whithe"></a>
             </div>
-            <p class="font__text font__text__catalogo">Catálogo de Filmes</p>
+            <p class="font__text font__text__catalogo">Personagens</p>
         </div>
         <div class="hero__container__bar"></div>
 
