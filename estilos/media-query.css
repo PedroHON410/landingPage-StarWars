@@ -434,8 +434,9 @@
 
         .hero{
             background: url(../imagens/images-desktop/home-desktop.svg);
-            height: 100vh;
+            background-size: 100%;
             background-repeat: no-repeat;
+            
         }
 
         .hero__nav__icon-menu{
@@ -502,6 +503,11 @@
             margin: 0.5rem 2.6rem;
         }
 
+        /* main */
+        main{
+            max-width: 130rem;
+            margin: auto;
+        }
 
         /* barra de catálogo */
         .catalogo__logos{
@@ -577,7 +583,7 @@
 
         .personagens__box{
             height: 30rem;
-            max-width: 32rem;
+            max-width: 20rem;
             flex-direction: column;   
         }
 
