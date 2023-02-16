@@ -75,7 +75,7 @@
             display: flex;
             gap: 2rem;
         }
-        .catalogo__logos :first-child{
+        .catalogo__logos a:first-child{
             display: block;
         }
 
@@ -205,7 +205,7 @@
             display: flex;
             gap: 2rem;
         }
-        .catalogo__logos :first-child{
+        .catalogo__logos a:first-child{
             display: block;
         }
 
@@ -336,7 +336,7 @@
             display: flex;
             gap: 2rem;
         }
-        .catalogo__logos :first-child{
+        .catalogo__logos a:first-child{
             display: block;
         }
 
@@ -524,7 +524,7 @@
             display: flex;
             gap: 2rem;
         }
-        .catalogo__logos :first-child{
+        .catalogo__logos a:first-child{
             display: block;
         }
 

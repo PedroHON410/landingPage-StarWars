@@ -163,11 +163,11 @@ main {
   margin-top: 6rem;
 }
 
-.catalogo__logos img {
+.catalogo__logos a img {
   width: 10rem;
 }
 
-.catalogo__logos :first-child {
+.catalogo__logos a:first-child {
   display: none;
 }
 
