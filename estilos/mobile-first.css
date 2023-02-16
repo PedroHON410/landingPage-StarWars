@@ -2,475 +2,482 @@
 
 
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-:root{
-    --colorButton:#022BFE;
-    --body-background:#080A1B;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-html{
-    font-size: 62.5%;
-}
-body{
-    background-color: var(--body-background);
-    height: 100vh;
-    
+:root {
+  --colorButton: #0C8CE9;
+  --body-background: #080A1B;
 }
 
-
-.btn__stream{
-    max-width: 12rem;
-    width: 100%;
-    height: 3.5rem;
-    background-color: var(--colorButton);
-    border: none;
-    border-radius: 0.5rem;
-    cursor: pointer;
-    font-size: 1.3rem;
-    font-family: 'Montserrat', sans-serif;
-    color: #fff;
-    font-weight: 500;
-    text-decoration: none;
-}
-.btn__stream:hover{
-    background-color: transparent;
-    border: 2px solid #fff;
-    transition: all 0.4s ease-in-out;
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
 }
 
+body {
+  background-color: var(--body-background);
+  height: 100vh;
 
-.font__text{
-    font-size: 2rem;
-    font-family: 'Montserrat', sans-serif;
-    color: #fff;
-    font-weight: 300;
+}
+
+/* classes reutilizáveis */
+.btn__stream {
+  max-width: 12rem;
+  width: 100%;
+  height: 3.5rem;
+  background-color: var(--colorButton);
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  font-size: 1.3rem;
+  font-family: 'Montserrat', sans-serif;
+  color: #fff;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.btn__stream:hover {
+  background-color: transparent;
+  border: 2px solid #fff;
+  transition: all 0.4s ease-in-out;
+}
+
+.font__text {
+  font-size: 2rem;
+  font-family: 'Montserrat', sans-serif;
+  color: #ffffffd5;
+  font-weight: 300;
 }
 
 
 /* header */
-.hero{
-    height: 64rem;
-    background-image: url(../imagens/images-mobile/home-mobile.png);
-    position: relative;
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-.hero__container{
-    
-}
-.hero__container__nav-bar{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 2.2rem 3rem 0rem 3rem;
-    
-}
-.hero__nav__logo img{
-    width: 8rem;
-}
-.hero .hero__container__bar{
-    display: none;
-    margin-left: 2rem;
-    margin-right: 2rem;
-}
-.hero__container__bar{
-    
-    height: 0.1rem;
-    background-color: #fff;
-    margin-bottom: 4.5rem;
+.hero {
+  height: 64rem;
+  background-image: url(../imagens/images-mobile/home-mobile.png);
+  position: relative;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
-.hero__box{
-    background: rgb(14, 18, 38);
-    height: 100vh;
-    width: 0;
-    position: absolute;
-    top: 0;
-    transition: all 0.4s ease;
-    overflow: hidden;
-    z-index: 1;
+.hero__container__nav-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2.2rem 3rem 0rem 3rem;
+
 }
 
-
-.hero__nav{
-   margin-top: 8rem;
-   margin-left: 3.5rem;
+.hero__nav__logo img {
+  width: 8rem;
 }
 
-
-.hero__nav__icon-menu{
-    color: #fff;
+.hero .hero__container__bar {
+  display: none;
+  margin-left: 2rem;
+  margin-right: 2rem;
 }
 
-.hero__nav__nav-list{
-    list-style: none;
-    
-}
-.hero__nav__nav-list li{
-    margin-top: 3.8rem;
-   
-}
-.hero__nav__nav-list li a{
-    text-decoration: none;
-    font-size: 1.6rem;
-    
-}
-.hero__box .hero__stream{
-    margin-left: 3.8rem;
-    margin-top: 4.5rem;
-    gap: 1.5rem;
-}
-.hero__stream{
-    display: flex;
-    align-items: center;
-    
-   
-}
-.hero__stream img{
-    width: 8rem;
-}
-/* .hero__stream__btn{
-    max-width: 10rem;
-    width: 100%;
-    height: 3.2rem;
-    font-size: 1.2rem;
-    background-color: var(--colorButton);
-    border: none;
-    border-radius: 0.5rem;
-    color: #fff;
-} */
+.hero__container__bar {
 
-.hero__box.active{
-    width: 70%;
+  height: 0.1rem;
+  background-color: #fff;
+  margin-bottom: 4.5rem;
 }
 
-.hero__container__order{
-    margin-left: 3.1rem;
-    margin-top: 12rem;
-    
-}
-.order__text span{
-    margin-top: 4rem;
-    position: relative;
-    display: block;
-    max-width: 12rem;
-    cursor: pointer;
-    padding-bottom: 1rem;
-}
-.order__text span::after{
-    content: '';
-    width: 100%;
-    height: 0.2rem;
-    background-color: #ffffffab;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    transition: 0.4s ease-in-out;
-   
+.hero__box {
+  background: rgb(14, 18, 38);
+  height: 100vh;
+  width: 0;
+  position: absolute;
+  top: 0;
+  transition: all 0.4s ease;
+  overflow: hidden;
+  z-index: 1;
 }
 
-.order__text span:hover::after{
-    width: 0;
+.hero__nav {
+  margin-top: 8rem;
+  margin-left: 3.5rem;
 }
 
+.hero__nav__icon-menu {
+  color: #fff;
+}
 
-/* --------------------- */
+.hero__nav__nav-list {
+  list-style: none;
+
+}
+
+.hero__nav__nav-list li {
+  margin-top: 3.8rem;
+
+}
+
+.hero__nav__nav-list li a {
+  text-decoration: none;
+  font-size: 1.6rem;
+  transition: all 0.3 ease;
+}
+
+.hero__nav__nav-list li a:hover {
+ color: #fff;
+
+}
+
+.hero__box .hero__stream {
+  margin-left: 3.8rem;
+  margin-top: 4.5rem;
+  gap: 1.5rem;
+}
+
+.hero__stream {
+  display: flex;
+  align-items: center;
+
+
+}
+
+.hero__stream img {
+  width: 8rem;
+}
+
+.hero__box.active {
+  width: 70%;
+}
+
+.hero__container__order {
+  margin-left: 3.1rem;
+  margin-top: 12rem;
+
+}
+
+.order__text span {
+  margin-top: 4rem;
+  position: relative;
+  display: block;
+  max-width: 12rem;
+  cursor: pointer;
+  padding-bottom: 1rem;
+}
+
+.order__text span::after {
+  content: '';
+  width: 100%;
+  height: 0.2rem;
+  background-color: #ffffffab;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transition: 0.4s ease-in-out;
+}
+
+.order__text span:hover::after {
+  width: 0;
+}
+.order__text span:hover{
+  color: #fff;
+}
 
 
 /* main */
-main{
-   
-    padding: 0rem 2rem;
-    
+main {
+  padding: 0rem 2rem;
 }
-.catalogo{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-top: 4.5rem;
-}
-.catalogo__logos img{
-    width: 10rem;
-}
-.catalogo__logos :first-child{
-    display: none;
-}
-.font__text__catalogo{
-    font-size: 1.8rem;
-    margin-top: 2rem;
+/* barra de catalogo */
+.catalogo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 4.5rem;
 }
 
+.catalogo__logos img {
+  width: 10rem;
+}
 
-.catalogo__mandaloriano{
-   
+.catalogo__logos :first-child {
+  display: none;
+}
+
+.font__text__catalogo {
+  font-size: 1.8rem;
+  margin-top: 2rem;
 }
 
 /* section */
-.serie__image{
-    margin-top: 3rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    
-    position: relative;
+.serie__image {
+  margin-top: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  visibility: hidden;
 }
 
-.mandaloriano__image{
-   
-   
+.serie__image picture img {
+  width: 100%;
+  transition: all 0.4s ease;
 }
 
-.serie__image picture img{
-    width: 100%;
-    transition: all 0.4s ease;
+.serie__image picture img:hover {
+  transform: scale(1.02);
 }
 
-.serie__image picture img:hover{
-    transform: scale(1.1);
-  }
-
-.serie__description{
-    max-width: 25rem;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    margin-top: 2rem;
+.serie__description {
+  max-width: 25rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-top: 2rem;
 }
 
-.description__text{
-    text-align: center;
-    
-}
-.description__text img{
-    width: 12rem;
-}
-.description__text p{
-    font-size: 1.4rem;
-    margin-top: 1rem;
+.description__text {
+  text-align: center;
+
 }
 
-.serie__button{
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    margin-top: 2rem;
-}
-.serie__button .btn__stream{
-    /* max-width: 10rem; */
-}
-.serie__button .btn__stream__link{
-    font-size: 1.2rem;
+.description__text img {
+  width: 12rem;
 }
 
-.btn__trailer{
-    background-color: transparent;
-    border: 2px solid #fff;
+.description__text p {
+  font-size: 1.4rem;
+  margin-top: 1rem;
 }
-.btn__trailer:hover{
-    background-color: var(--colorButton);
-    transition: all 0.4s ease-in-out;
-    border: none;
+
+.serie__button {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 2rem;
 }
-/* ---------------- */
+
+.serie__button .btn__stream__link {
+  font-size: 1.2rem;
+}
+
+.btn__trailer {
+  background-color: transparent;
+  border: 2px solid #fff;
+}
+
+.btn__trailer:hover {
+  background-color: var(--colorButton);
+  transition: all 0.4s ease-in-out;
+  border: none;
+}
+
 
 /* barra do Star wars white */
 
-.main__bar{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 0.5rem;
-    margin-top: 6rem;
+.main__bar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  margin: 6rem 0rem;
 }
-.main__bar img{
-    width: 9rem;
+
+.main__bar img {
+  width: 9rem;
 }
-.bar{
-    width: 100%;
-    height: 0.1rem;
-    background-color: #fff;
+
+.bar {
+  width: 100%;
+  height: 0.1rem;
+  background-color: #fff;
 }
-/* -------------------- */
+
 
 /* catalogo de filmes */
-.catalogo__filmes{
-    
-    
+
+.carousel {
+  overflow: hidden;
+  max-width: 72rem;
+  position: relative;
+}
+
+.carousel .carousel__item,
+.carousel .carousel__item--hidden {
+  display: none;
+}
+
+.carousel .carousel__item img {
+  width: 100%;
+  max-width: 72rem;
+  height: auto;
+}
+
+.carousel .carousel__item--visible {
+  display: block;
+  animation: fadeVisibility 0.5s;
+}
+
+.carousel .carousel__actions {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.carousel .carousel__actions button {
+  border-radius: 5rem;
+  border: 0;
+  cursor: pointer;
+  width: 4rem;
+  height: 4rem;
+  color: #FFF;
+  background-color: transparent;
+  
+}
+
+.carousel .carousel__actions button span:hover{
+
+  transition: all 0.3s ease;
+  transform: scale(1.4);
 }
 
 
-.carousel {
-    overflow: hidden;
-    max-width: 72rem;
-    position: relative;
-  }
-  
-  .carousel .carousel__item,
-  .carousel .carousel__item--hidden {
-    display: none;
-  }
-  
-  .carousel .carousel__item img {
-    width: 100%;
-    max-width: 72rem;
-    height: auto;
-  }
-  
-  .carousel .carousel__item--visible {
-    display: block;
-    animation: fadeVisibility 0.5s;
-  }
-  
-  .carousel .carousel__actions {
-    display: flex;
-    width: 100%;
-    justify-content: space-between;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-  }
-  
-  .carousel .carousel__actions button {
-    border-radius: 5rem;
-    border: 0;
-    cursor: pointer;
-    width: 4rem;
-    height: 4rem;
-    color: #FFF;
-    background-color: rgba(14, 18, 38, 0.363);
-  }
-  
-  .carousel .carousel__actions button[data-js="carousel__button--prev"] {
-    margin-left: 0.5rem;
-  }
-  
-  .carousel .carousel__actions button[data-js="carousel__button--next"] {
-    margin-right: 0.5rem;
-  }
-  
-  @keyframes fadeVisibility {
-    0% {
-      opacity: 0;
-    }
-    100% {
-      opacity: 1;
-      transform: opacity linear;
-    }
+.carousel .carousel__actions button[data-js="carousel__button--prev"] {
+  margin-left: 0.5rem;
+}
+
+.carousel .carousel__actions button[data-js="carousel__button--next"] {
+  margin-right: 0.5rem;
+}
+
+@keyframes fadeVisibility {
+  0% {
+    opacity: 0;
   }
 
-
-  .catalogo__assinatura{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 3.5rem;
-    gap: 3rem;
+  100% {
+    opacity: 1;
+    transform: opacity linear;
   }
-  .catalogo__description{
-    text-align: center;
-  }
-  .catalogo__description p{
-    font-size: 1.6rem;
-    margin-top: 1rem;
-  }
-
-  .catalogo__button{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 80%;
-    gap: 1rem;
-  }
-  .catalogo__button .btn__stream{
-    max-width: 100%;
-   
-  }
-
-  .catalogo__button img{
-   width: 13rem;
-  }
+}
 
 
+.catalogo__assinatura {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 3.5rem;
+  gap: 3rem;
+}
+
+.catalogo__description {
+  text-align: center;
+}
+
+.catalogo__description p {
+  font-size: 1.6rem;
+  margin-top: 1rem;
+}
+
+.catalogo__button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80%;
+  gap: 1rem;
+}
+
+.catalogo__button .btn__stream {
+  max-width: 100%;
+}
+
+.catalogo__button img {
+  width: 13rem;
+}
 
 
-  /* pesonagens */
-  .personagens{
-    display: flex;
-    justify-content: center;
-  }
+/* pesonagens */
+.personagens {
+  display: flex;
+  justify-content: center;
+}
 
-  .personagens__container{
-    display: grid;
-    grid-template-columns: 1fr;
-    row-gap: 2rem;
-    column-gap: 4rem;
-  }
-  .personagens__box{
-    background: rgba(0, 0, 0, 0.44);
-    border-radius: 2rem;
-    height: 21rem;
-    max-width: 35rem;
-    overflow: hidden;
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-    padding-right: 0.5rem;
-  }
+.personagens__container {
+  display: grid;
+  grid-template-columns: 1fr;
+  row-gap: 2rem;
+  column-gap: 4rem;
+}
 
-  .personagens__box span{
-    font-size: 1.4rem;
-    
-  }
+.personagens__box {
+  background: rgba(0, 0, 0, 0.44);
+  border-radius: 2rem;
+  height: 21rem;
+  max-width: 35rem;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding-right: 0.5rem;
+}
 
-  .personagens__image{
-    height: 21rem;
-    width: 20rem;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    border-bottom-right-radius: 8rem;
-    transition: all 0.4s ease;
-    cursor: pointer;
-  }
+.personagens__box span {
+  font-size: 1.4rem;
+  cursor: pointer;
+}
 
-  .personagens__image:hover{
-    transform: scale(1.1);
-  }
+.personagens__box span:hover{
+  color: #fff;
+}
 
-  .droid{
-    background-image: url(../imagens/personagens/battleDroid.png);
-    background-position: right center;
-  }
+.personagens__image {
+  height: 21rem;
+  width: 20rem;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-bottom-right-radius: 8rem;
+  transition: all 0.4s ease;
+  cursor: pointer;
+}
 
-  .stormtroopers{
-    background-image: url(../imagens/personagens/stormtroopers.png);
-    background-position: right center;
-  }
+.personagens__image:hover {
+  transform: scale(1.1);
+}
 
-  .leia{
-    background-image: url(../imagens/personagens/leia.png);
-  }
+.droid {
+  background-image: url(../imagens/personagens/battleDroid.png);
+  background-position: right center;
+}
 
-  .han-solo{
-    background-image: url(../imagens/personagens/han-solo.png);
-  }
+.stormtroopers {
+  background-image: url(../imagens/personagens/stormtroopers.png);
+  background-position: right center;
+}
 
-  .chewbacca{
-    background-image: url(../imagens/personagens/chewbacca.png);
-  }
+.leia {
+  background-image: url(../imagens/personagens/leia.png);
+}
 
-  .ahsoka{
-    background-image: url(../imagens/personagens/ahsoka-tano.png);
-  }
+.han-solo {
+  background-image: url(../imagens/personagens/han-solo.png);
+}
 
-  .c3po{
-    background-image: url(../imagens/personagens/c3-po.png);
-  }
+.chewbacca {
+  background-image: url(../imagens/personagens/chewbacca.png);
+}
 
-  .r2d2{
-    background-image: url(../imagens/personagens/r2-d2.png);
-  }
+.ahsoka {
+  background-image: url(../imagens/personagens/ahsoka-tano.png);
+}
+
+.c3po {
+  background-image: url(../imagens/personagens/c3-po.png);
+}
+
+.r2d2 {
+  background-image: url(../imagens/personagens/r2-d2.png);
+}
