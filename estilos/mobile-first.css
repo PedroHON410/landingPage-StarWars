@@ -153,38 +153,7 @@ header{
   width: 70%;
 }
 
-.hero__container__order {
-  margin-left: 3.1rem;
-  margin-top: 12rem;
-}
 
-.order__text span {
-  margin-top: 4rem;
-  position: relative;
-  display: block;
-  max-width: 12rem;
-  cursor: pointer;
-  padding-bottom: 1rem;
-}
-
-.order__text span::after {
-  content: '';
-  width: 100%;
-  height: 0.2rem;
-  background-color: #ffffffab;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  transition: 0.4s ease-in-out;
-}
-
-.order__text span:hover::after {
-  width: 0;
-}
-
-.order__text span:hover{
-  color: #fff;
-}
 
 
 /* main */
