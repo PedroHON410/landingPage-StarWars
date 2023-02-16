@@ -41,11 +41,6 @@ body {
   text-decoration: none;
 }
 
-.btn__stream:hover {
-  background-color: transparent;
-  border: 2px solid #fff;
-  transition: all 0.4s ease-in-out;
-}
 
 .font__text {
   font-size: 2rem;
@@ -238,11 +233,7 @@ main {
   border: 2px solid #fff;
 }
 
-.btn__trailer:hover {
-  background-color: var(--colorButton);
-  transition: all 0.4s ease-in-out;
-  border: none;
-}
+
 
 
 /* barra do Star wars white */

@@ -269,6 +269,13 @@
 
     @media screen and (min-width: 993px) and (max-width: 1024px) {
         
+        /* classes reutilizáveis */
+        .btn__stream:hover {
+            background-color: transparent;
+            border: 2px solid #fff;
+            transition: all 0.4s ease-in-out;
+        }
+       
         /* header */
         
         .hero{
@@ -376,6 +383,12 @@
             justify-content: space-between;
         }
 
+        .btn__trailer:hover {
+            background-color: var(--colorButton);
+            transition: all 0.4s ease-in-out;
+            border: none;
+        }
+
         /* CATALOGO DE FILMES */
          
         .catalogo__filmes{
@@ -420,6 +433,13 @@
 
     @media screen and (min-width: 1025px) {
         
+        /* classes reutilizáveis */
+        .btn__stream:hover {
+            background-color: transparent;
+            border: 2px solid #fff;
+            transition: all 0.4s ease-in-out;
+        }
+          
         /* header */
 
         .hero{
@@ -546,6 +566,11 @@
             justify-content: space-between;
         }
 
+        .btn__trailer:hover {
+            background-color: var(--colorButton);
+            transition: all 0.4s ease-in-out;
+            border: none;
+        }
 
          /* CATALOGO DE FILMES */
          
