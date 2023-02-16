@@ -9,7 +9,10 @@ const backButton = document.querySelector('[data-js="carousel__button--prev"]')
 let indexFilmeAtual = 0
 
 window.sr = ScrollReveal({ reset: true })
+
 sr.reveal('.serie__image', {duration: 1200,})
+
+
 
 menuIcon.addEventListener('click',()=>{
     menuBox.classList.toggle('active')
