@@ -8,17 +8,19 @@
     extra large screens: above 1024px
     */
 
-    @media screen and (min-width: 768px) and (max-width: 992px) {
+   
+   @media screen and (min-width: 600px) and (max-width: 768px) {
+
+        /* header */
         .hero{
             background-image: url(../imagens/images-mobile/image-tablet.jpg);
-            
-            height: 80rem;
-            
+            height: 80rem;  
         }
         
         .hero__nav__icon-menu{
             display: none;
         }
+
         .hero__box{
             width: auto;
             height: auto;
@@ -34,7 +36,6 @@
             display: flex;
             align-items: center;
             padding: 2.2rem 3rem 0rem 3rem;
-    
         }
         
         .hero__container__nav-bar{
@@ -49,31 +50,29 @@
             margin: 0rem 0rem 0rem 3rem;
             display: inline-block;
         }
+
         .hero__box .hero__stream{
             margin: 0rem 0rem 0rem 0rem;
             gap: 2rem;
         }
+
         .btn__stream{
             width: 16rem;
         }
+
         .btn__stream__link{
             font-size: 1.4rem;
         }
 
         .hero .hero__container__bar{
             display: block;
-            /* height: 0.1rem;
-            background-color: #fff; */
-            /* margin: 0.5rem 2.6rem; */
         }
 
         .hero__container__order{
-           
             margin-top: 9rem;
-            
         }
 
-        /* -------------------- */
+        /* barra de catálogo */
 
 
         .catalogo__logos{
@@ -84,36 +83,34 @@
             display: block;
         }
 
-        .mandaloriano__image{
-            /* background-image: url(../imagens/images-desktop/mandaloriano-desktop.svg);
-            height: 35rem;
-            width: 100%;
-            background-position: top; */
-        }
+
+        /* catalogo de séries */
+        
         .serie__image{
             flex-direction: row;
             justify-content: space-around;
         }
+
         .catalogo__bobafett{
             display: flex;
             flex-direction: row-reverse;
             align-items: center;
         }
+
         .catalogo__obi-wan{
             display: flex;
             align-items: center;
             flex-direction: row-reverse;
         }
+
         .serie__image picture img{
             width: 45rem;
         }
+
         .serie__description{
             margin-top: 0rem;
         }
 
-        .description__text{
-            
-        }
         .description__text img{
             width: 12rem;
         }
@@ -123,6 +120,7 @@
         }
 
         /* CATALOGO DE FILMES */
+       
         .catalogo__filmes{
           display: flex;
           flex-direction: column;
@@ -131,8 +129,143 @@
 
         .catalogo__button{
             width: auto;
+            flex-direction: row; 
+        }
+
+        /* peronagens */
+
+        .personagens__container{ 
+            grid-template-columns: 1fr 1fr;
+        }
+    
+   }
+   
+   
+   
+   
+   
+   
+    @media screen and (min-width: 769px) and (max-width: 992px) {
+       
+       /* header */
+        .hero{
+            background-image: url(../imagens/images-mobile/image-tablet.jpg);
+            height: 80rem;  
+        }
+        
+        .hero__nav__icon-menu{
+            display: none;
+        }
+
+        .hero__box{
+            width: auto;
+            height: auto;
+            position: inherit;
+            background-color: transparent;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex: auto;
+        }
+        
+        .hero__container{
+            display: flex;
+            align-items: center;
+            padding: 2.2rem 3rem 0rem 3rem;
+        }
+        
+        .hero__container__nav-bar{
+            padding: 0rem;   
+        }
+
+        .hero__nav{
+            margin: 0;
+        }
+       
+        .hero__nav__nav-list li{
+            margin: 0rem 0rem 0rem 3rem;
+            display: inline-block;
+        }
+
+        .hero__box .hero__stream{
+            margin: 0rem 0rem 0rem 0rem;
+            gap: 2rem;
+        }
+
+        .btn__stream{
+            width: 16rem;
+        }
+
+        .btn__stream__link{
+            font-size: 1.4rem;
+        }
+
+        .hero .hero__container__bar{
+            display: block;
+        }
+
+        .hero__container__order{
+            margin-top: 9rem;
+        }
+
+        /* barra de catálogo */
+
+
+        .catalogo__logos{
+            display: flex;
+            gap: 2rem;
+        }
+        .catalogo__logos :first-child{
+            display: block;
+        }
+
+
+        /* catalogo de séries */
+        
+        .serie__image{
             flex-direction: row;
-           
+            justify-content: space-around;
+        }
+
+        .catalogo__bobafett{
+            display: flex;
+            flex-direction: row-reverse;
+            align-items: center;
+        }
+
+        .catalogo__obi-wan{
+            display: flex;
+            align-items: center;
+            flex-direction: row-reverse;
+        }
+
+        .serie__image picture img{
+            width: 45rem;
+        }
+
+        .serie__description{
+            margin-top: 0rem;
+        }
+
+        .description__text img{
+            width: 12rem;
+        }
+
+        .serie__button{
+            justify-content: space-between;
+        }
+
+        /* CATALOGO DE FILMES */
+       
+        .catalogo__filmes{
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+        }
+
+        .catalogo__button{
+            width: auto;
+            flex-direction: row; 
         }
 
         /* peronagens */
@@ -146,13 +279,17 @@
 
     @media screen and (min-width: 993px) and (max-width: 1024px) {
         
+        /* header */
+        
         .hero{
             background-image: url(../imagens/images-desktop/home-desktop.svg);
             height: 100vh;
         }
+
         .hero__nav__icon-menu{
             display: none;
         }
+
         .hero__box{
             width: auto;
             height: auto;
@@ -163,6 +300,7 @@
             justify-content: space-between;
             flex: auto;
         }
+
         .hero__container{
             display: flex;
             align-items: center;
@@ -181,21 +319,22 @@
             margin: 0rem 0rem 0rem 3rem;
             display: inline-block;
         }
+
         .hero__box .hero__stream{
             margin: 0rem 0rem 0rem 0rem;
             gap: 2rem;
         }
+
         .btn__stream{
             width: 16rem;
         }
+
         .hero .hero__container__bar{
             display: block;
-            /* height: 0.1rem;
-            background-color: #fff; */
             margin: 0.5rem 2.6rem;
         }
 
-        /* ---------------- */
+        /* Barra de catálogo */
         .catalogo__logos{
             display: flex;
             gap: 2rem;
@@ -204,28 +343,20 @@
             display: block;
         }
 
-        /* .mandaloriano__image{
-            background-image: url(../imagens/images-desktop/mandaloriano-desktop.svg);
-            height: 65rem;
-            width: 100%;
-            background-position: top;
-        }
-        .serie__description{
-            position: absolute;
-            top: 7rem;
-            left: 1.5rem;
-        } */
-
+        /* Catálogo de séries */
+        
         .serie__image{
             flex-direction: row;
             justify-content: space-around;
+            align-items: center;
         }
-
+        
         .catalogo__bobafett{
             display: flex;
             flex-direction: row-reverse;
             align-items: center;
         }
+
         .catalogo__obi-wan{
             display: flex;
             align-items: center;
@@ -235,13 +366,14 @@
         .serie__description{
             margin-top: 0rem;
         }
+
         .serie__image picture img{
             width: 45rem;
         }
+
         .serie__description{
             max-width: 30rem;
         }
-
 
         .description__text{
             text-align: left;
@@ -253,19 +385,63 @@
         .serie__button{
             justify-content: space-between;
         }
+
+        /* CATALOGO DE FILMES */
+         
+        .catalogo__filmes{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-around;
+          }
+
+          .catalogo__button{
+            width: 100%;
+          }
+
+          .catalogo__button .btn__stream{
+            max-width: auto; 
+          }
+  
+          /* Personagens */
+
+        .personagens__container{ 
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+
+
+        .personagens__box{
+            height: 30rem;
+            max-width: 32rem;
+            flex-direction: column;   
+        }
+
+        .personagens__image{
+            height: 20rem;
+            width: 21rem;
+        }
+
+        .personagens__box span{
+            font-size: 2rem;
+            margin-top: 3rem;
+        }
     }
 
 
     @media screen and (min-width: 1025px) {
         
+        /* header */
+
         .hero{
             background: url(../imagens/images-desktop/home-desktop.svg);
             height: 100vh;
             background-repeat: no-repeat;
         }
+
         .hero__nav__icon-menu{
             display: none;
         }
+
         .hero__box{
             width: auto;
             height: auto;
@@ -276,6 +452,7 @@
             justify-content: space-between;
             flex: auto;
         }
+
         .hero__container{
             display: flex;
             align-items: center;
@@ -285,11 +462,11 @@
         .hero__container__nav-bar{
             padding: 0rem;   
         }
+
         .hero__nav__logo img{
             width: 10rem;
         }
         
-
         .hero__nav{
             margin: 0;
         }
@@ -298,35 +475,35 @@
             margin: 0rem 0rem 0rem 3rem;
             display: inline-block;
         }
+
         .hero__box .hero__stream{
             margin: 0rem 0rem 0rem 0rem;
             gap: 2rem;
             flex: auto;
             justify-content: flex-end;
         }
+
         .serie__button .btn__stream{
             max-width: 16rem;
             height: 5rem;
         }
+
         .btn__stream{
             max-width: 18rem;
-            height: 5rem;
-            
-            
+            height: 5rem;   
         }
+
         .hero__stream img{
             width: 10rem;
         }
         
         .hero .hero__container__bar{
             display: block;
-            /* height: 0.1rem;
-            background-color: #fff; */
             margin: 0.5rem 2.6rem;
         }
 
 
-        /* ---------------- */
+        /* barra de catálogo */
         .catalogo__logos{
             display: flex;
             gap: 2rem;
@@ -334,17 +511,19 @@
         .catalogo__logos :first-child{
             display: block;
         }
+
+        /* Catálogo de séries */
         .serie__image{
-          
            justify-content: space-around;
            flex-direction: row;
-
         }
+
         .catalogo__bobafett{
             display: flex;
             flex-direction: row-reverse;
             align-items: center;
         }
+
         .catalogo__obi-wan{
             display: flex;
             align-items: center;
@@ -354,18 +533,15 @@
         .serie__description{
             margin-top: 0rem;
         }
+
         .serie__image picture img{
             width: 72rem;
         }
+
         .serie__description{
             max-width: 35rem;
         }
        
-
-
-        .description__text{
-            
-        }
         .description__text img{
             width: 23.5rem;
         }
@@ -376,6 +552,7 @@
 
 
          /* CATALOGO DE FILMES */
+         
          .catalogo__filmes{
             display: flex;
             flex-direction: row;
@@ -384,37 +561,35 @@
           }
 
           .catalogo__button{
-
             width: 100%;
-            
           }
+
           .catalogo__button .btn__stream{
-            max-width: auto;
-           
+            max-width: auto; 
           }
   
-          /* personagens */
+          /* Personagens */
+
         .personagens__container{ 
-            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
         }
 
 
         .personagens__box{
-            
             height: 30rem;
             max-width: 32rem;
-            flex-direction: column;
-            
+            flex-direction: column;   
         }
 
         .personagens__image{
             height: 20rem;
             width: 21rem;
-     
         }
 
         .personagens__box span{
             font-size: 2rem;
             margin-top: 3rem;
-          }
+        }
+
+          
     }
