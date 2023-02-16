@@ -412,13 +412,13 @@ main {
   transform: scale(1.1);
 }
 
-.droid {
-  background-image: url(../imagens/personagens/battleDroid.png);
-  background-position: right center;
+.vader {
+  background-image: url(../imagens/personagens/vader.png);
+  background-position: center;
 }
 
-.stormtroopers {
-  background-image: url(../imagens/personagens/stormtroopers.png);
+.luke {
+  background-image: url(../imagens/personagens/luke.png);
   background-position: right center;
 }
 
@@ -434,16 +434,17 @@ main {
   background-image: url(../imagens/personagens/chewbacca.png);
 }
 
-.ahsoka {
-  background-image: url(../imagens/personagens/ahsoka-tano.png);
+.sidious {
+  background-image: url(../imagens/personagens/sidious.png);
 }
 
-.c3po {
-  background-image: url(../imagens/personagens/c3-po.png);
+.yoda {
+  background-image: url(../imagens/personagens/yoda.png);
 }
 
-.r2d2 {
-  background-image: url(../imagens/personagens/r2-d2.png);
+.obi-wan {
+  background-image: url(../imagens/personagens/obi-wan.png);
+  background-position: right;
 }
 
 
