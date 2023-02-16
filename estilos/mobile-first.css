@@ -11,6 +11,7 @@
 :root {
   --colorButton: #0C8CE9;
   --body-background: #080A1B;
+  --characters-background: #00000070;
 }
 
 html {
@@ -19,9 +20,9 @@ html {
 }
 
 body {
-  background-color: var(--body-background);
+  
   height: 100vh;
-
+  background-color: var(--body-background);
 }
 
 /* classes reutilizáveis */
@@ -55,6 +56,10 @@ body {
 
 
 /* header */
+
+header{
+ 
+}
 .hero {
   height: 64rem;
   background-image: url(../imagens/images-mobile/home-mobile.png);
@@ -138,8 +143,6 @@ body {
 .hero__stream {
   display: flex;
   align-items: center;
-
-
 }
 
 .hero__stream img {
@@ -153,7 +156,6 @@ body {
 .hero__container__order {
   margin-left: 3.1rem;
   margin-top: 12rem;
-
 }
 
 .order__text span {
@@ -179,6 +181,7 @@ body {
 .order__text span:hover::after {
   width: 0;
 }
+
 .order__text span:hover{
   color: #fff;
 }
@@ -193,7 +196,7 @@ main {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-top: 4.5rem;
+  margin-top: 6rem;
 }
 
 .catalogo__logos img {
@@ -413,7 +416,7 @@ main {
 }
 
 .personagens__box {
-  background: rgba(0, 0, 0, 0.44);
+  background: var(--characters-background);
   border-radius: 2rem;
   height: 21rem;
   max-width: 35rem;
@@ -423,6 +426,7 @@ main {
   gap: 0.5rem;
   padding-right: 0.5rem;
 }
+
 
 .personagens__box span {
   font-size: 1.4rem;
@@ -480,4 +484,37 @@ main {
 
 .r2d2 {
   background-image: url(../imagens/personagens/r2-d2.png);
+}
+
+
+/* footer */
+
+footer{
+  background-color: var(--characters-background);
+  margin-top: 9rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+
+.footer__box{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 90%;
+  gap: 2rem;
+}
+
+.box__imagens img{
+  width: 7rem;
+  margin: 0rem 2rem;
+}
+
+.box__terms{
+  text-align: center;
+}
+.box__terms p{
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
 }
