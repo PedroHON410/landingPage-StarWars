@@ -49,10 +49,6 @@ backButton.addEventListener('click', ()=>{
     }
     
     classAddRemove(indexFilmeAtual)
-    // filmes.forEach(filme =>{
-    //     filme.classList.remove('carousel__item--visible')
-    // })
-    
-    // filmes[indexFilmeAtual].classList.add('carousel__item--visible')
+   
 })
 
