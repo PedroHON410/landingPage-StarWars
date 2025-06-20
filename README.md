@@ -1,7 +1,7 @@
 
  # Landing page Star Wars
 
- Página desenvolvida para praticar os conhecimentos de HTML, CSS e JS
+ ```Página desenvolvida para praticar os conhecimentos de HTML, CSS e JS```
 
 ## Deploy
 
